@@ -70,3 +70,9 @@ future-forecast{
   background: transparent;
   
 }
+
+.coded-by{
+    text-align: center;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
