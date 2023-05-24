@@ -1,0 +1,72 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(images/wave.jpg);
+  background-size: cover;
+
+}
+
+h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 28px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+li {
+  color: black;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: 'Poppins', sans-serif;
+  height: 19px;
+  line-height: 2;
+  list-style: none;
+  
+ 
+}
+future-forecast{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.weather-app {
+  border: 2px solid #dadde1;
+  padding: 15px;
+  margin: 100px auto;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.weather-icon {
+  height: 64px;
+  width: 64px;
+  margin-right: 10px;
+}
+
+.temperature {
+  color: black
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1;
+  position: relative;
+  top: -55px;
+  left: 75px
+}
+
+.units {
+  position: relative;
+  top: -34px;
+  left: 55px
+}
+
+.search-form {
+  margin-bottom: 20px;
+  background: transparent;
+  
+}
