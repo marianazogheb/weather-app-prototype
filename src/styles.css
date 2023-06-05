@@ -27,6 +27,7 @@ li {
   height: 19px;
   line-height: 2;
   list-style: none;
+  text-transform: capitalize;
   
  
 }
