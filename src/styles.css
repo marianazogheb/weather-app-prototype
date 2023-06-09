@@ -10,7 +10,7 @@ h1 {
   font-size: 24px;
   font-weight: 200;
   line-height: 28px;
-  margin: 0;
+  margin-bottom: 0;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -28,10 +28,12 @@ li {
   line-height: 2;
   list-style: none;
   text-transform: capitalize;
+  margin: 0;
+  padding: 0;
   
  
 }
-future-forecast{
+.future-forecast{
   text-align: center;
   margin: 0 auto;
 }

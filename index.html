@@ -27,7 +27,7 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <form class="search-form" id="search-form">
+        <form class="mb-3" id="search-form">
           <div class="row">
             <div class="col-6">
               <input
@@ -36,7 +36,7 @@
                 autofocus="on"
                 autocomplete="off"
                 id="city-input"
-                class="form-control shadow-sm"
+                class="form-control"
               />
             </div>
             <div class="col-3">
@@ -46,11 +46,6 @@
                 class="form-control btn btn-primary shadow-sm w-100"
               />
             </div>
-            <div class="col-3">
-              <button class="btn btn-success w-100" id="current-location-button">
-              Current 📍
-            </button>
-          </div>
 				</form>
         <h1 id="city">
         </h1>
@@ -69,18 +64,12 @@
               class="weather-icon float-left" />
               <div class="float-left">
                 <span class="temperature" id="temperature"></span>
-                <span class="units">
-                  <a href="#" id="celsius-link">ºC</a> | 
-                  <a href="#" id="fahrenheit-link">ºF</a>
-                </span>
+                <span class="units">ºC</span>
               </div>
             </div>
           </div>
           <div class="col-6">
             <ul>
-              <li>
-                Precipitation:<span id="precipitation"></span>%
-              </li>
               <li>
                 Humidity:<span id="humidity"></span>%
               </li>
