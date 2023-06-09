@@ -21,6 +21,32 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="row">
+            <div class="col-2">
+              <div class="weather-forecast-date">${day}
+              </div> 
+							<img 
+              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="" width="20"/>
+              <div class="weather-forecast-temperature">
+                <span class="weather-forecast-temperature-max">18º</span> 
+                <span class="weather-forecast-temperature-min">12º</span>
+              </div>
+            </div>
+          </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
@@ -90,3 +116,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Lisbon");
+displayForecast();
